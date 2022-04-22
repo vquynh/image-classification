@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -6,10 +6,28 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
   <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
   <h1>Image classification using MobileNet and p5.js</h1>
+  <div class="wrapper">
+    <div class="title">
+      File Upload
+    </div>
+    <div class="file_upload_list">
+      <ul></ul>
+    </div>
+    <div class="choose_file">
+      <label for="choose_file">
+        <input type="file" id="choose_file" name="choose_file">
+        <span>Choose Files</span>
+      </label>
+    </div>
+    <button onclick="uploadFile()">Upload</button>
+
+  </div>
+  <script src="/js/fileUpload.js"></script>
   <script src="sketch.js"></script>
 </body>
 
