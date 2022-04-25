@@ -11,11 +11,16 @@ This a web application for classifying images using the machine learning library
 
 ### How the app is built
 #### ml5
+The library provides access to machine learning algorithms and models in the browser, building on top of TensorFlow.js. 
+In this application, the ImageClassifier class of the ml5 library is used.
+
 ```javascript
 classifier = ml5.imageClassifier('MobileNet');
 classifier.classify(img, gotResult);
 
 ```
+ `ml5.imageClassifier()` is a method to create an object ImageClassifier that classifies an image using a pre-trained model.
+ "MobileNet" model is designed to be used in mobile applications, and it is TensorFlow’s first mobile computer vision model.
 
 #### Chart.js
 [Chart.js](https://www.chartjs.org/docs/latest/) is used to visualise the classification results.
