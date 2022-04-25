@@ -1,32 +1,30 @@
-## Welcome to GitHub Pages
+## Image Classification App
 
-You can use the [editor on GitHub](https://github.com/vquynh/image-classification/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This a web application for classifying images using the machine learning library [ml5](https://ml5js.org).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### How to use the app
 
-### Markdown
+- Click on an example image or upload your own image to start classifying.
+    - If you upload a file not of type image, a warning will be shown.
+- The most suitable label according to the machine learning model will be shown with the corresponding probability.
+- In the chart, there are three best labels with their probability. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### How the app is built
+### ml5
+```javascript
+classifier = ml5.imageClassifier('MobileNet');
+classifier.classify(img, gotResult);
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Chart.js
+[Chart.js](https://www.chartjs.org/docs/latest/) is used to visualise the classification results.
+
+### Images 
+The example images used in this application are from [Unplash](https://unsplash.com/photos/d6u5Z6A28VI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) and are free to use under Unplash License.
+
+### Github Pages
+The application is hosted using [Github Pages](https://pages.github.com)
 
 ### Jekyll Themes
 
