@@ -3,7 +3,7 @@
 This a web application for classifying images using the machine learning library [ml5](https://ml5js.org).
 
 ### How to use the app
-- Go to https://vquynh.github.io/image-classification/home.html
+- Go to [Image Classification](https://vquynh.github.io/image-classification/home.html)
 - Click on an example image or upload your own image to start classifying.
     - If you upload a file not of type image, a warning will be shown.
 - The most suitable label according to the machine learning model will be shown with the corresponding probability.
