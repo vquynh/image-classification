@@ -1,25 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: #8178d3;
-    color: #63686e;
+html body div.jumbotron{
+    background-color: #d9e7cb; 
+    border-radius: 10px;
 }
 
 .wrapper{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 500px;
-    background: #fff;
+    padding: 20px;
 }
 
 .title{
@@ -30,86 +26,70 @@ body{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.file_upload_list li .file_item{
-    display: flex;
-    border-bottom: 1px solid #f3f4f8;
-    padding: 15px 20px;
-}
-.file_item .format{
-    background: #8178d3;
-    border-radius: 10px;
-    width: 45px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    margin-right: 15px;
+
+div.card.border-light div.card-body div.card-columns div.card img.card-img.preview{
+    object-fit: cover;
+    height: 120px;
 }
 
-.file_item .file_preview{
-    border-radius: 10px;
-    width: 45px;
-    height: 40px;
+html body div.wrapper div.card-deck div.card.border-light div.card-body div.card-columns{
+    padding-left: 0;
 }
 
-.file_item {
-    width: calc(100% - 60px);
-    font-size: 14px;
+html body div.wrapper div.card-deck div.card.border-light div.card-body div.card-columns.card{
+    padding-left: 0;
+    margin-left: 0;
 }
 
-.file_item .file_info,
-.file_item .file_size_wrap{
-    display: flex;
-    align-items: center;
-}
-.file_item .file_info{
-    justify-content: space-between;
-}
-.file_item {
-    width: 100%;
-    background: #efefef;
-    overflow: hidden;
-    border-radius: 5px;
-    margin-top: 8px;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
+#choosen_image{
+    max-width: 600px;
+    max-height: 400px;
+    object-fit: cover;
 }
 
-.file_item img,
-.file_item .file_name,
-.file_item .file_size_wrap .file_size{
-    margin-right: 15px;
-}
-.file_item .file_size_wrap .file_close{
-    border: 1px solid #8178d3;
-    color: #8178d3;
-    width: 20px;
-    height: 20px;
-    line-height: 18px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 10px;
-    font-weight: bold;
-    cursor: pointer;
+.choosen_preview{
+    border-style: groove;
+    border-color: rgb(113, 198, 165);
 }
 
-.file_item .file_size_wrap .file_close:hover{
-    background: #8178d3;
-    color: #fff;
-}
-
-.choose_file label{
-    display: block;
-    border: 2px dashed #8178d3;
+.card-columns{
     padding: 15px;
-    width: calc(100% - 20px);
-    margin: 10px;
+}
+
+div.card.border-light div.card-body{
+    padding-top: 0;
+}
+
+div.card.border-light h5.card-header{
+    border-bottom: 0px;
+    background:none;
+}
+
+#drop_zone {
+    display: block;
+    border: 2px dashed rgb(113, 198, 165);
     text-align: center;
     cursor: pointer;
 }
+
+.alert{
+    padding: auto;
+}
+.alert-warning{
+    font-size: small;
+}
+
+.card-img-overlay{
+    padding-top: 0;
+}
+
+img.card-img-top{
+    width: 100px;
+    height: 100px;
+    opacity: 20%;
+    padding: 2%;
+}
+
 .choose_file #choose_file{
     outline: none;
     opacity: 0;
@@ -117,7 +97,7 @@ body{
 }
 .choose_file span{
     font-size: 14px;
-    color: #8178d3;
+    color: white;
 }
 
 .choose_file label:hover span{
