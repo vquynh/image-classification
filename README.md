@@ -1,6 +1,6 @@
 ## [Image Classification App](https://vquynh.github.io/image-classification/home.html)
 
-This a web application for classifying images using the machine learning library [ml5](https://ml5js.org).
+This is a web application for classifying images using the machine learning library [ml5](https://ml5js.org).
 
 ### How to use the app
 - Go to [Image Classification](https://vquynh.github.io/image-classification/home.html)
